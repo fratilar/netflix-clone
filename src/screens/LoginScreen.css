@@ -1,0 +1,102 @@
+.loginscreen {
+   position: relative;
+   height: 100%;
+   background: url("https://playtech.ro/wp-content/uploads/2020/02/Netflix-Parasite.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.loginscreen-logo {
+   position: fixed;
+   left: 20px;
+   width: 150px;
+   object-fit: contain;
+}
+
+.sign-btn {
+   position: fixed;
+   right: 20px;
+   top: 20px;
+   padding: 10px 20px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   font-size: 1rem;
+   color: #fff;
+   background-color: #e50914;
+   border-radius: 5px;
+}
+
+.loginscreen-overlay {
+   width: 100%;
+   height: 100vh;
+   z-index: 1;
+   background-color: rgba(0, 0, 0, 0.4);
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.loginscreen-body {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   right: 0;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+}
+
+.loginscreen-body h1 {
+   font-size: 3.5rem;
+   margin-bottom: 20px;
+}
+
+.loginscreen-body h2 {
+   font-size: 2rem;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+
+.loginscreen-body h3 {
+   font-size: 1.3rem;
+   font-weight: 400;
+}
+
+.loginscreen-input {
+   margin: 20px;
+}
+
+.loginscreen-input > form > input {
+   padding: 10px;
+   outline: none;
+   height: 40px;
+   width: 80%;
+   max-width: 500px;
+   border: none;
+   font-size: 1rem;
+   margin-bottom: 15px;
+}
+
+.input-btn {
+   color: #fff;
+   background-color: #e50914;
+   border: none;
+   padding: 20px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+   .loginscreen-body h1 {
+      font-size: 2.5rem;
+   }
+   .loginscreen-body h2 {
+      font-size: 1.4rem;
+   }
+   .loginscreen-body h3 {
+      font-size: 1rem;
+   }
+}
